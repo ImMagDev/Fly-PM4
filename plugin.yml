@@ -1,0 +1,6 @@
+name: Fly
+author: ImMagDev
+api: 
+- 4.0.0
+version: "1.0.0"
+description: Plugin template for PM4
