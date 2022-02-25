@@ -8,17 +8,12 @@ use pocketmine\event\Listener;
 use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
-    
-    private static self $instance;
-    
-    public function onEnable () : void {
-        $self::$instance = $this;
-        $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
-        $this->getLogger()->info("Plugin Enable!")
+
+    public function onEnable() : void {
+        $this->getLogger->info("The plugin is enable!")
     }
 
-    public static function getInstance() : self {
-        return self::$instance;
+    public function onDisable() : void {
+        $this->getLogger->info("The plugin is disable!")
     }
-
-    
+}

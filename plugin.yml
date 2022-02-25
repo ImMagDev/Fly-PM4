@@ -1,6 +1,15 @@
 name: Fly
-author: ImMagDev
+author: ImMagDev\Main
 api: 
 - 4.0.0
 version: "1.0.0"
-description: Plugin template for PM4
+
+commands:
+    fly:
+      description: Plugin for test
+      permission: fly.use
+
+permissions:
+  fly.use:
+    description: plugin for test
+    default: true
